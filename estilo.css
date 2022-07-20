@@ -1,0 +1,180 @@
+.inicio {
+    margin: 0;
+}
+
+.minions {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.minions::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imgs/logotipoo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+div {
+    background-image: linear-gradient(to right, #1c2020 50%, rgb(78, 76, 76));
+}
+
+.edit p {
+    margin: 20px 78px 0 78px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+}
+
+.topicos h2 {
+    font-family: 'Amatic SC', cursive;
+    color: white;
+    margin-left: 50px;
+}
+
+.topicos p {
+    color: white;
+    margin: 30px 60px 0 60px;
+}
+
+.topicos {
+    overflow: hidden;
+}
+
+.edit img {
+    width: 300px;
+    height: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 20px;
+    border-radius: 50px 50% 50cm 50cm;
+    background-color: white;
+    position: sticky;
+    top: 0%;
+}
+
+nav :hover {
+    text-decoration: underline;
+    font-size: 20px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+article {
+    display: inline-flex;
+}
+
+.romance {
+    background-image: linear-gradient(to right, #f5c8e7 0%, #f19c97 100%);
+    margin: 0;
+    color: white;
+}
+
+ h1 {
+    font-family: 'Kaushan Script', cursiva;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 32px;
+    color: aliceblue;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    transition: transform .2s cubic-bezier(.37,1.89,.59,.73);
+}
+
+h1:hover {
+    transform: scale(0.9);
+}
+
+ p {
+    margin: 50px 40px 0 40px;
+    font-size: 17px;
+    color: aliceblue;
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+.suspense {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);;
+    margin: 0;
+}
+
+.comedia {
+    background-image: linear-gradient(to right, #f1e9a0 0%, #f6d365 100%);
+    margin: 0;
+}
+
+.criadoras {
+    background-image: linear-gradient(to right, #1c2020 0%, rgb(116, 114, 114)100%); 
+    margin: 0;
+}
+
+.animacao {
+    background-image: linear-gradient(to right, #B8DCFF 0%, #6BBBFF 100%);
+    margin: 0;
+}
+
+.img1 {
+    margin-top: 25px;
+    margin-left: 60px;
+    border-radius: 25px;
+    width: 150px;
+    height: 220px;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.img1:hover {
+    opacity: 0.5;
+}
+
+.video {
+    width: 20%;
+    margin-top: 3%;
+    margin-right: 1%;
+    box-sizing: border-box;
+    border-radius: 15%;
+}
+
+.fotos {
+  margin-top: 2%;
+  border-radius: 50%;
+  width: 15%;
+  box-sizing: border-box;
+}
+
+.fotos:hover, #fotoA:hover {
+    animation: girando 4s ease-in-out 0s infinite alternate;
+}
+
+#fotoA {
+    margin-top: 2%;
+    margin-left: 1.5%;
+  border-radius: 45%;
+  width: 13%;
+  box-sizing: border-box;
+}
+
+@keyframes girando {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
